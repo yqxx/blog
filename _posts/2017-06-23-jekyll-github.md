@@ -12,6 +12,7 @@ description: 边学边记录。
 「免费的一切」
 - github光坏
 - 无限流量，世界各地都有理想的访问速度
+- 享受git的版本管理功能，不用担心文章遗失
 - 何时何地，只要向主机提交commit，就能发布新文章
 
 ![图片](/img/post/github.png)
@@ -23,3 +24,23 @@ description: 边学边记录。
 - 一个生成静态网页的工具
 - 不需要数据库支持
 - 可以免费部署在Github上
+
+### 开始 
+以Windows为例
+- 下载安装Ruby
+
+[http://rubyinstaller.org/downloads/](http://rubyinstaller.org/downloads/){:target="_blank"}
+![图片](/img/post/ruby-installer.png)
+注意勾上
+- 安装Jekyll
+{% highlight Perl %}
+gem install jekyll
+{% endhighlight %}
+- 获取最简单 Jekyll 模板并生成静态页面并运行的例子
+{% highlight Perl %}
+jekyll new myblog
+cd myblog
+jekyll serve
+{% endhighlight %}
+搞定，访问看[http://localhost:4000](http://localhost:4000){:target="_blank"}
+![图片](/img/post/jekyll.png)
