@@ -3,7 +3,7 @@ layout: post
 title: Node如何入门
 date: 2016-6-26
 categories: node
-tags: [总结,知识管理]
+tags: [node]
 description: 边学边记录。
 ---
 

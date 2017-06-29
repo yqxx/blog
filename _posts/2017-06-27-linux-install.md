@@ -3,7 +3,7 @@ layout: post
 title: Linux部署WEB工程
 date: 2016-6-26
 categories: linux
-tags: [总结,知识管理]
+tags: [linux]
 description: 边学边记录。
 ---
 
