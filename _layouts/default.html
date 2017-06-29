@@ -5,5 +5,12 @@
     {% include nav.html %}
     {{ content }}
     {% include footer.html %}
+
+    <div id="back-top">
+	  <a href="#top" title="回到顶部"></a>
+	</div>
+	
+	<link rel="stylesheet" href="{{ "/css/backtop.css" | prepend: site.baseurl }}"> <!-- Back Top -->
+	<script src="{{ "/js/backtop.js " | prepend: site.baseurl }}"></script> <!-- Back Top -->
 </body>
 </html>
