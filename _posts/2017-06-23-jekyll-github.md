@@ -46,6 +46,6 @@ jekyll serve
 ![图片]({{ site.baseurl }}/img/post/jekyll.png)
 
 - 上传到github
-以我的github为例，博客的url就是https://yqxx.github.io/blog/
+以我的github为例，博客的url就是[https://yqxx.github.io/blog/](https://yqxx.github.io/blog/){:target="_blank"}
 
 至此github搭建个人博客最简单的流程已结束。
