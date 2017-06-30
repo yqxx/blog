@@ -44,3 +44,8 @@ jekyll serve
 {% endhighlight %}
 搞定，访问看[http://localhost:4000](http://localhost:4000){:target="_blank"}
 ![图片]({{ site.baseurl }}/img/post/jekyll.png)
+
+- 上传到github
+以我的github为例，博客的url就是https://yqxx.github.io/blog/
+
+至此github搭建个人博客最简单的流程已结束。
