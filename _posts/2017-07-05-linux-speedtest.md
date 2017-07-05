@@ -16,7 +16,7 @@ python get-pip.py
 pip -V
 {% endhighlight %}
 
-[git官方站](https://github.com/sivel/speedtest-cli){:target="_blank"}
+[speedtest官方站](https://github.com/sivel/speedtest-cli){:target="_blank"}
 
 - 安装speedtest
 {% highlight Perl %}
