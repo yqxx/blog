@@ -147,6 +147,10 @@ hr.small {
 	@media only screen and (min-width: 768px) {
 		background: transparent;
 		border-bottom: 1px solid transparent;
+
+		body {
+			font-size: 20px;
+		}	
 		.navbar-brand {
 			color: white;
 			padding: 20px;
@@ -228,10 +232,17 @@ hr.small {
 	.background-cover;
 	// NOTE: Background images are set within the HTML using inline CSS!
 	margin-bottom: 0px;
+
+
+	@media only screen and (min-width: 768px) {
+		& {
+			margin-bottom: 20px;
+		}
+	}
 	.site-heading,
 	.post-heading,
 	.page-heading {
-		padding: 100px 0 0px;
+		padding: 100px 0 50px;
 		color: white;
 		@media only screen and (min-width: 768px) {
 			padding: 150px 0;
