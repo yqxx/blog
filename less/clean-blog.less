@@ -5,18 +5,16 @@
 
 body {
 	.serif;
-	font-size: 20px;
+	line-height: 1.7;
+	font-size: 16px;
 	color: @gray-dark;
+	overflow-x: hidden;
 }
 
 // -- Typography
 
 p {
-	line-height: 1.5;
 	margin: 30px 0;
-	a {
-		text-decoration: underline;
-	}
 }
 
 h1,
@@ -25,10 +23,16 @@ h3,
 h4,
 h5,
 h6 {
-	.sans-serif;
+	.serif;
+	line-height: 1.1;
 	font-weight: 800;
 }
-
+h1 {
+  .sans-serif;
+}
+h4 {
+  font-size: 18px;
+}
 a {
 	color: @gray-dark;
 	&:hover,
@@ -44,9 +48,33 @@ a img {
 	}
 }
 
+article {
+  overflow-x: hidden;
+}
+
 blockquote {
 	color: @gray;
-	font-style: italic;
+	font-size: 0.95em;
+	margin: 20px 0 20px;
+
+	p {
+	  margin: 0;
+	}
+}
+
+@media screen and (max-width: 768px) {
+  select {
+    -webkit-appearance: none;
+    margin-top: 15px;
+    color: #44bff2;
+    border-color: #44bff2;
+    padding: 0em 0.4em;
+    background: white;
+  }
+}
+.table th,
+.table td {
+  border: 1px solid #eee !important;
 }
 
 hr.small {
@@ -56,6 +84,42 @@ hr.small {
 	border-color: white;
 }
 
+@media screen and (max-width: 500px) {
+  pre code {
+    display: block;
+    width: 500px;
+  }
+}
+.post-container a {
+  color: #2B4180;
+}
+.post-container a:hover,
+.post-container a:focus {
+  color: #6bb4bf;
+}
+.post-container ul,
+.post-container ol {
+  margin-bottom: 40px;
+}
+.post-container ol ol,
+.post-container ol ul,
+.post-container ul ol,
+.post-container ul ul {
+  margin-bottom: 5px;
+}
+.post-container li p {
+  margin: 0;
+  margin-bottom: 5px;
+}
+.post-container li h1,
+.post-container li h2,
+.post-container li h3,
+.post-container li h4,
+.post-container li h5,
+.post-container li h6 {
+  line-height: 2;
+  margin-top: 20px;
+}
 // Navigation
 
 .navbar-custom {
@@ -65,7 +129,8 @@ hr.small {
 	left: 0;
 	width: 100%;
 	z-index: 3;
-	.sans-serif;
+	.serif;
+	line-height: 1.7;
 	.navbar-brand {
 		font-weight: 800;
 	}
@@ -162,11 +227,11 @@ hr.small {
 	background-attachment: scroll;
 	.background-cover;
 	// NOTE: Background images are set within the HTML using inline CSS!
-	margin-bottom: 50px;
+	margin-bottom: 0px;
 	.site-heading,
 	.post-heading,
 	.page-heading {
-		padding: 100px 0 50px;
+		padding: 100px 0 0px;
 		color: white;
 		@media only screen and (min-width: 768px) {
 			padding: 150px 0;
@@ -180,22 +245,23 @@ hr.small {
 			font-size: 50px;
 		}
 		.subheading {
-			font-size: 24px;
-			line-height: 1.1,
+			.serif;
+			line-height: 1.7;
+			font-size: 20px;
+			line-height: 1.1;
 			display: block;
-			.sans-serif;
 			font-weight: 300;
 			margin: 10px 0 0;
 		}
 		@media only screen and (min-width: 768px) {
 			h1 {
-				font-size: 80px;
+				font-size: 65px;
 			}
 		}
 	}
 	.post-heading {
 		h1 {
-			font-size: 35px;
+			font-size: 27px;
 		}
 		.subheading,
 		.meta {
@@ -203,27 +269,32 @@ hr.small {
 			display: block;
 		}
 		.subheading {
-			.sans-serif;
-			font-size: 24px;
+			.serif;
+			line-height: 1.7;
+			font-size: 17px;
+			font-weight: normal;
 			margin: 10px 0 30px;
-			font-weight: 600;
+			margin-top: -5px;
 		}
 		.meta {
 			.serif;
 			font-style: italic;
 			font-weight: 300;
-			font-size: 20px;
+			font-size: 17px;
 			a {
 				color: white;
 			}
 		}
 		@media only screen and (min-width: 768px) {
 			h1 {
-				font-size: 55px;
+				font-size: 50px;
 			}
 			.subheading {
 				font-size: 30px;
 			}
+			.meta {
+    			font-size: 20px;
+ 		 	}
 		}
 	}
 }
@@ -239,11 +310,13 @@ hr.small {
 			color: @brand-primary;
 		}
 		> .post-title {
-			font-size: 30px;
+			font-size: 21px;
+			line-height: 1.3;
 			margin-top: 30px;
-			margin-bottom: 10px;
+			margin-bottom: 8px;
 		}
 		> .post-subtitle {
+			font-size: 15px;
 			margin: 0;
 			font-weight: 300;
 			margin-bottom: 10px;
@@ -251,7 +324,7 @@ hr.small {
 	}
 	> .post-meta {
 		color: @gray;
-		font-size: 18px;
+		font-size: 16px;
 		font-style: italic;
 		margin-top: 0;
 		> a {
@@ -267,8 +340,28 @@ hr.small {
 	@media only screen and (min-width: 768px) {
 		> a {
 			> .post-title {
-				font-size: 36px;
+				font-size: 26px;
+			    line-height: 1.3;
+			    margin-bottom: 10px;
 			}
+			> .post-subtitle {
+				font-size: 16px;
+			}
+		}
+	}
+}
+.post-content-preview {
+	font-size: 13px;
+	font-style: normal;
+	color: #a3a3a3;
+
+	&:hover {
+		color: #46A5ED;
+	}
+
+	@media only screen and (min-width: 768px) {
+		& {
+			font-size: 14px;
 		}
 	}
 }
@@ -293,6 +386,7 @@ hr.small {
 }
 
 footer {
+	font-size: 20px;
 	padding: 50px 0 65px;
 	.list-inline {
 		margin: 0;
@@ -302,6 +396,15 @@ footer {
 		font-size: 14px;
 		text-align: center;
 		margin-bottom: 0;
+
+		a {
+			color: #93e1de;
+
+			&:hover,
+			&:focus {
+				color: #44bff2;
+			}
+		}
 	}
 }
 
@@ -368,7 +471,8 @@ form .row:first-child .floating-label-form-group {
 // Button Styles
 
 .btn {
-	.sans-serif;
+	.serif;
+	line-height: 1.7;
 	text-transform: uppercase;
 	font-size: 14px;
 	font-weight: 800;
@@ -400,7 +504,8 @@ form .row:first-child .floating-label-form-group {
 	li {
 		> a,
 		> span {
-			.sans-serif;
+			.serif;
+			line-height: 1.7;
 			text-transform: uppercase;
 			font-size: 14px;
 			font-weight: 800;
@@ -460,4 +565,13 @@ img::-moz-selection {
 
 body {
 	webkit-tap-highlight-color: @brand-primary;
+}
+
+/* Optimize UserExperience */
+.navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-toggle:hover {
+  background-color: inherit;
+}
+.navbar-default .navbar-toggle:active {
+  background-color: #ddd;
 }
