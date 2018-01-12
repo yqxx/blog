@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Jekyll github搭建个人博客
-date: 2016-6-26
+date: 2017-6-23
 categories: jekyll
 tags: [jekyll,git]
 description: 边学边记录。

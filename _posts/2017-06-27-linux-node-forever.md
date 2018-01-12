@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 使用Forever在Linux运行Node工程
-date: 2016-6-26
+date: 2017-6-27
 categories: linux
 tags: [linux,node]
 description: 边学边记录。

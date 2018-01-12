@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Linux上下行网速测试
-date: 2016-6-26
+date: 2017-7-5
 categories: linux
 tags: [linux]
 description: 边学边记录。
