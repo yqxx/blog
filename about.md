@@ -10,10 +10,6 @@ header-img: "img/facebook.jpg"
     <p><img src="{{ site.baseurl }}/img/favicon.png" align="center"></p>
 </center>
 
-我是李毅奇，每天千字践行者，践行时间：2014年02月10日至2015年02月23日，感谢这段经历，让我成为了现在的我。
-
-现在研习 **认知写作学** 。
-
 ### 坚信
 
 
@@ -26,33 +22,7 @@ header-img: "img/facebook.jpg"
 ### 关注：
 
 
-- [元认知](http://www.mesule.com/)
-- 写作
-- Python
-- [阳志平](http://www.yangzhiping.com/)
-- [ZoomQuiet](http://blog.zoomquiet.io/)
-
-
-
-
-### 代表作：
-
-- [《24款最值得推荐的中文字体》](http://cnfeat.com/blog/2015/05/22/a-24-chinese-fonts/)
-
-- [《世界并非如你所见——用可供性来发现更大的世界》](http://cnfeat.com/blog/2015/05/01/affordance/)
-
-- [《如何正确地练习写作》](http://cnfeat.com/blog/2015/03/02/how-to-write/)
-
-
-### 我的朋友们
-
-- [YiLee](http://yilee.me)
-- [Caos](http://caos.me)
-- [BuzhiNote](http://BuzhiNote.com)
-- [Azeril](http://azeril.me)
-
-
-
-
-
-
+- [vue](https://cn.vuejs.org/)
+- ES6
+- [react](https://reactjs.org/)
+- [git](https://github.com/yqxx)
