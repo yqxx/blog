@@ -6,7 +6,7 @@ categories: react
 tags: [react-redux]
 description: 边学边记录。
 ---
-
+[http://www.ruanyifeng.com/blog/2016/09/redux_tutorial_part_three_react-redux.html](http://www.ruanyifeng.com/blog/2016/09/redux_tutorial_part_three_react-redux.html)
 ### 两个核心方法
 
 - Provider
@@ -20,6 +20,8 @@ description: 边学边记录。
 引用自[https://www.zhihu.com/question/41312576?sort=created](https://www.zhihu.com/question/41312576?sort=created)
 
 `mapStateToProps`
+
+第一个参数总是state对象，还可以使用第二个参数，代表容器组件的props对象
 
 构建好Redux系统的时候，它会被自动初始化，但是你的React组件并不知道它的存在，因此你需要分拣出你需要的Redux状态，所以你需要绑定一个函数，它的参数是state，简单返回你关心的几个值
 
