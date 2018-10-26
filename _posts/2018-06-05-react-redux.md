@@ -78,3 +78,21 @@ const VisibleTodoList = connect(
 
 export default VisibleTodoList
 {% endhighlight %}
+
+children是react自带的，比如
+```
+<Root>
+    <Inner>
+        <div></div>
+    </Inner>
+</Root>
+```
+<Inner />是<Root />的children, <div />是<Inner />的children，不向子组件明确传递也能取到
+```
+Link.propTypes = {
+  active: PropTypes.bool.isRequired,
+  children: PropTypes.node.isRequired,
+  onClick: PropTypes.func.isRequired
+}
+```
+这东西只是react的类型校验，有没有不影响代码的正常运行，这里校验了父组件的children, 如果父组件没有children，会报一个没有children的错，便于定位问题。
