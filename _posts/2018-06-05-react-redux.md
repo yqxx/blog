@@ -7,7 +7,7 @@ tags: [react-redux]
 description: 边学边记录。
 ---
 [http://www.ruanyifeng.com/blog/2016/09/redux_tutorial_part_three_react-redux.html](http://www.ruanyifeng.com/blog/2016/09/redux_tutorial_part_three_react-redux.html)
-### 两个核心方法1
+### 两个核心方法
 
 - Provider
 
